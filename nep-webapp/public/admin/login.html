@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Connexion admin — N. Expert Partner</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body class="admin-body login-body">
+  <div class="login-card">
+    <img src="/assets/logo.png" alt="N. Expert Partner Consulting" class="login-logo">
+    <h1>Espace administrateur</h1>
+    <p class="login-sub">Connectez-vous pour consulter les messages reçus depuis le site.</p>
+
+    <form id="loginForm" novalidate autocomplete="off">
+      <div class="form-row">
+        <label for="username">Identifiant</label>
+        <input type="text" id="username" name="username" required autocomplete="off">
+      </div>
+      <div class="form-row">
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" name="password" required autocomplete="off">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block" id="loginBtn">Se connecter</button>
+      <p class="login-status" id="loginStatus" role="status" aria-live="polite"></p>
+    </form>
+
+    <a href="/" class="back-link">&larr; Retour au site</a>
+  </div>
+
+  <script src="/admin/admin.js"></script>
+</body>
+</html>
